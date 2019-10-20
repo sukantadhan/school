@@ -1,4 +1,4 @@
-package com.oar.utils;
+package com.dhan.sukanta.school.utils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import com.oar.db.DBConnection;
+import com.dhan.sukanta.school.db.DBConnection;
 
 public class MarksProcessor {
 

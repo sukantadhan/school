@@ -1,4 +1,4 @@
-package org.oar.SecondApp;
+package com.dhan.sukanta.school.servlets;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

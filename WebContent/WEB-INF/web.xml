@@ -8,22 +8,6 @@
 		<welcome-file>welcome.html</welcome-file>
 	</welcome-file-list>
 	<servlet>
-		<servlet-name>MyServlet</servlet-name>
-		<servlet-class>org.oar.SecondApp.DynamicDemo1</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>MyServlet</servlet-name>
-		<url-pattern>/dhan</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>MyServlet1</servlet-name>
-		<servlet-class>org.oar.SecondApp.DynamicDemo2</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>MyServlet1</servlet-name>
-		<url-pattern>/welcome1</url-pattern>
-	</servlet-mapping>
-	<servlet>
 		<servlet-name>WelcomeServlet</servlet-name>
 		<jsp-file>/welcome.html</jsp-file>
 	</servlet>
@@ -33,7 +17,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>HandleRegistrationServlet</servlet-name>
-		<servlet-class>org.oar.SecondApp.RegistrationServlet</servlet-class>
+		<servlet-class>com.dhan.sukanta.school.servlets.RegistrationServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>HandleRegistrationServlet</servlet-name>
@@ -57,7 +41,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>HandleLoginServlet</servlet-name>
-		<servlet-class>org.oar.SecondApp.LoginServlet</servlet-class>
+		<servlet-class>com.dhan.sukanta.school.servlets.LoginServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>HandleLoginServlet</servlet-name>
@@ -74,21 +58,19 @@
 
 	<servlet>
 		<servlet-name>LogoutServlet</servlet-name>
-		<servlet-class>org.oar.SecondApp.LogoutServlet</servlet-class>
+		<servlet-class>com.dhan.sukanta.school.servlets.LogoutServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>LogoutServlet</servlet-name>
 		<url-pattern>/logout</url-pattern>
 	</servlet-mapping>
-
-
-
+	
 	<filter>
-		<filter-name>xy</filter-name>
-		<filter-class>com.oar.filter.AcsessFilter</filter-class>
+		<filter-name>AccessFilter</filter-name>
+		<filter-class>com.dhan.sukanta.school.filter.AcsessFilter</filter-class>
 	</filter>
 	<filter-mapping>
-		<filter-name>xy</filter-name>
+		<filter-name>AccessFilter</filter-name>
 		<url-pattern>/home</url-pattern>
 	</filter-mapping>
 </web-app>

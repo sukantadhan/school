@@ -1,4 +1,4 @@
-package com.oar.db;
+package com.dhan.sukanta.school.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
